@@ -5,7 +5,7 @@
 ---
 
 ## Application Summary
-This is a console application that uses a public api (ToDoApi) to get all the ToDo items. Built this application to get more familiar using public api's and working with httpClient.  
+This is a console application that uses a public api (ToDoApi) to get all the ToDo items. I built this application to get more familiar with using public api's and working with httpClient.  
 
 ---
 
