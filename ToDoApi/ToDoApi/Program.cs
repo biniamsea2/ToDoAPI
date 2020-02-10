@@ -7,18 +7,18 @@ namespace ToDoApi
     class Program
     {
         //create a new httpClient which is going to be used to get the response from our api. It will respond with all
-        //available users
+        //ToDo items.
 
         HttpClient client = new HttpClient();
         static async Task Main(string[] args)
         {
             Program program = new Program();
-            await program.GetAllUsers();
+            await program.GetAllToDoItems();
         }
 
-        public async Task GetAllUsers()
+        public async Task GetAllToDoItems()
         {
-            string response = await client.GetStringAsync("https://jsonplaceholder.typicode.com/users");
+            string response = await client.GetStringAsync("https://jsonplaceholder.typicode.com/todos");
             Console.WriteLine(response);
         }
     }
